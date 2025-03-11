@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+}
+
+.dadosUsuario {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+

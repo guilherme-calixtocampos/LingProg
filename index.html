@@ -3,12 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testando versionamento no VS Code</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Tipos de formulários</title>
 </head>
 <body>
     <main>
-        <h1>Testando versionamento no VS Code</h1>
-        <p>teste</p>
+
+        <h1>Tipos de formulários</h1>
+        <fieldset >
+            <legend>Login</legend>
+            <div class="login">
+                <form action=“https://www.w3schools.com/action_page.php”>
+                    <label for="fname">Usuário</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Senha</label><br>
+                    <input type="password" id="lname" name="lname">
+                </form>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Dados do Usuário</legend>
+            <div class="dadosUsuario">
+                <form action=“https://www.w3schools.com/action_page.php”>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="endereco">Endereço</label><br>
+                    <input type="text" id="endereco" name="endereco"><br>
+                    <label for="numero">Número:</label><br>
+                    <input type="number" id="numero" name="numero"><br>
+                    <label for="completo">Complemento</label><br>
+                    <input type="text" id="complemento" name="complemento"><br>
+                </form>
+                <form action="/action_page.php">
+                    <label for="cidade">Escolha sua cidade:</label><br>
+                    <input list="browsers" name="browser">
+                    <datalist id="browsers">
+                        <option value="Alambari">Alambari</option>
+                        <option value="Araçoiaba da Serra">Araçoiaba da Serra</option>
+                        <option value="Boituva">Boituva</option>
+                        <option value="Iperó">Iperó</option>
+                        <option value="Itapetininga">Itapetininga</option>
+                        <option value="Itu">Itu</option>
+                        <option value="Jumirim">Jumirim</option>
+                        <option value="Mairinque">Mairinque</option>
+                        <option value="Matriz de Camargo">Matriz de Camargo</option>
+                        <option value="Piedade">Piedade</option>
+                        <option value="Porto Feliz">Porto Feliz</option>
+                        <option value="Salto">Salto</option>
+                        <option value="São Roque">São Roque</option>
+                        <option value="Sorocaba">Sorocaba</option>
+                        <option value="Votorantim">Votorantim</option>
+                        <option value="Outra cidade">Outra cidade</option>
+                    </datalist>
+                    <input type="submit">
+                </form>
+                <label for="cars">Escolha um estado:</label>
+                    <select id="cars" name="cars">
+                        <option value="São Paulo">São Paulo</option>
+                            <option value="Minas Gerais">Minas Gerais</option>
+                            <option value="Rio de Janeiro">Rio de Janeiro</option>
+                            <option value="Paraná">Paraná</option>
+                            <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                            <option value="Espírito Santo">Espírito Santo</option>
+                            <option value="Goiás">Goiás</option>
+                            <option value="Outro estado">Outra estado</option>
+                    </select>
+                    <form>
+                        <label for="CEP">CEP:</label><br>
+                        <input type="number" id="numeroCEP" name="numeroCEP"><br>
+                    </form>
+                    <form>
+                        <label for="genero">Gênero:</label><br>
+                        <input type="radio" id="masculino" name="sex_masc" value="MASC">
+                        <label for="masculino">Masculino</label><br>
+                        <input type="radio" id="feminino" name="sex_fem" value="FEM">
+                        <label for="feminino">Feminino</label><br>
+                        <input type="radio" id="naoInformado" name="sex_desc" value="NI">
+                        <label for="javascript">Prefiro não informar</label>
+                    </form>
+                    <form>
+                        <label for="curso:">Curso:</label><br>
+                        <input type="checkbox" id="curso1" name="curso1" value="curso1">
+                        <label for="curso1">ADS</label><br>
+                        <input type="checkbox" id="curso2" name="curso2" value="curso2">
+                        <label for="curso2">Gestão de TI</label><br>
+                        <input type="checkbox" id="curso3" name="curso3" value="curso3">
+                        <label for="curso3">Jogos Digitais</label>
+                    </form>
+                    <form>
+                        <label for="modo">Modo:</label><br>
+                        <input type="radio" id="presencial" name="presencial" value="PRES">
+                        <label for="presencial">Presencial</label><br>
+                        <input type="radio" id="EAD" name="EAD" value="EAD">
+                        <label for="EAD">EAD</label><br>
+                        <input type="radio" id="semiPres" name="semiPres" value="SP">
+                        <label for="semiPres">Semi Presencial</label>
+                    </form>
+                    
+            </div>  
+        </fieldset>
     </main>
 </body>
 </html>
